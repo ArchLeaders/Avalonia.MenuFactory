@@ -4,6 +4,32 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageId>AvaloniaMenuFactory</PackageId>
+    <Title>Avalonia Menu Factory</Title>
+    <Authors>ArchLeaders</Authors>
+    <Description>Dynamic UI library that lets you seamlessly implement a menu bar into your Avalonia application using only a class, where each function is a menu item.</Description>
+    <Copyright>(c) ArchLeaders</Copyright>
+    <PackageProjectUrl>https://github.com/ArchLeaders/Avalonia.MenuFactory</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ArchLeaders/Avalonia.MenuFactory</RepositoryUrl>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <PackageIcon>Icon.png</PackageIcon>
+    <PackageTags>avaloniaui;menu;reflection</PackageTags>
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\ReadMe.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
