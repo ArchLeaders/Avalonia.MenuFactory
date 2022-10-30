@@ -8,7 +8,7 @@
 
 Avalonia Menu Factory works by reading a decorated class of methods and sending the results into an `Menu` control.
 
-Use the static `MenuFactory.Generate()` method, passing in an instance of your [menu class]() to create the menu items. These items can then be assigned to the `Menu.Items` property.
+Use the static `MenuFactory.Generate()` method, passing in an instance of your [menu class](https://github.com/ArchLeaders/Avalonia.MenuFactory/blob/master/Avalonia.MenuFactory.Demo/Models/MenuModel.cs) to create the menu items. These items can then be assigned to the `Menu.Items` property.
 
 ```cs
 MenuRoot = this.FindControl<Menu>("MenuRoot")!;
