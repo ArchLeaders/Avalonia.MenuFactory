@@ -12,7 +12,7 @@ work-in-progress
 
 ## Install
 
-Install with NuGet or build from [source](./).
+Install with NuGet or build from [source]().
 
 #### NuGet
 ```powershell
