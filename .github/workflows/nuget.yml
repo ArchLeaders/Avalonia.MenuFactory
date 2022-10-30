@@ -1,4 +1,4 @@
-﻿name: "Deploy SettingsFactory to NuGet"
+﻿name: "Deploy MenuFactory to NuGet"
 
 on:
   push:
@@ -10,11 +10,11 @@ env:
 
 jobs:
   deploy:
-    name: "Deploy AvaloniaSettingsFactory.Core"
+    name: "Deploy AvaloniaMenuFactory"
     runs-on: ubuntu-latest
 
     env:
-      csproj: "Avalonia.MenuFactory/Avalonia.SettingsFactory.csproj"
+      csproj: "Avalonia.MenuFactory/Avalonia.MenuFactory.csproj"
       build: "${{ github.workspace }}/build"
 
     steps:
