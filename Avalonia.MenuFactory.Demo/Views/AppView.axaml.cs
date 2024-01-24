@@ -1,20 +1,15 @@
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 using Avalonia.MenuFactory.Demo.Models;
 
-namespace Avalonia.MenuFactory.Demo.Views
+namespace Avalonia.MenuFactory.Demo.Views;
+
+public partial class AppView : Window
 {
-    public partial class AppView : Window
+    public AppView()
     {
-        public AppView()
-        {
-            AvaloniaXamlLoader.Load(this);
-            this.AttachDevTools();
+        InitializeComponent();
 
-            MenuRoot = this.FindControl<Menu>("MenuRoot")!;
-
-            MenuModel menuModel = new();
-            MenuRoot.Items = MenuFactory.Generate(menuModel);
-        }
+        MenuModel menuModel = new();
+        MenuRoot.ItemsSource = MenuFactory.Generate(menuModel);
     }
 }
